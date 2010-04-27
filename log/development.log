@@ -726,3 +726,13 @@ Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
 Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:59:33) [POST]
   Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1bclac8-0>}
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 11:20:58) [GET]
+Rendering uploads/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 11:21:06) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1pyv0wo-0>}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]

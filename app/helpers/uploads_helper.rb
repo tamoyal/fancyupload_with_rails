@@ -2,11 +2,6 @@ module UploadsHelper
 
   def file_uploader
     out = ""
-    out << %(
-      <form action="/uploads/upload" method="post" enctype="multipart/form-data" id="upload-form">
-      </form>
-    )
-
     out << "\n"
     out << link_to('Upload File(s)', '#',:id=> 'upload_link')
     out << "\n"
