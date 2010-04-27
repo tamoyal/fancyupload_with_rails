@@ -1,0 +1,728 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Wed Nov 25 09:33:35 +0100 2009
+  Status: 500 Internal Server Error
+  undefined method `except' for "uploads/new":String
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/builder.rb:58:in `divide_route_options'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/builder.rb:166:in `build'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:309:in `add_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:317:in `add_named_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:33:in `named_route'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:29:in `root'
+    /Users/nico/Rails/s3_uploader_example/config/routes.rb:3
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /Users/nico/Rails/s3_uploader_example/config/routes.rb:1
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/rails-2.3.3/lib/commands/server.rb:111
+    /Users/nico/.rvm/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Users/nico/.rvm/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    ./script/server:3
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+    /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+    /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+    /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:38) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:33:39) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:05) [GET]
+Rendering uploads/new
+
+ActionView::TemplateError (undefined method `javascript' for #<ActionView::Base:0x101193488>) on line #1 of app/views/uploads/new.erb:
+1: <%- javascript( ) %>
+2: 
+3: <% %>
+
+    app/views/uploads/new.erb:1
+
+Rendered rescues/_trace (52.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:24) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:26) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:35:43) [GET]
+
+ActionView::MissingTemplate (Missing template uploads/new.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:36:39) [GET]
+
+ActionController::UnknownAction (No action responded to new. Actions: ):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:37:03) [GET]
+Rendering uploads/new
+Completed in 134ms (View: 132, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:38:27) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:38:48) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:38:48) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:41:25) [GET]
+Rendering uploads/new
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:41:29) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-25 09:41:30) [GET]
+
+ActionController::RoutingError (No route matches "/none" with {:method=>:get}):
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/lib/ruby-debug-ide.rb:109:in `debug_program'
+  /Users/nico/.rvm/gems/ruby/1.8.7/gems/ruby-debug-ide-0.4.9/bin/rdebug-ide:87
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19:in `load'
+  /Users/nico/.rvm/gems/ruby/1.8.7/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:42:31) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:42:50) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:49:46) [GET]
+Rendering uploads/new
+Completed in 55ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:51:31) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:52:03) [GET]
+Rendering uploads/new
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:55:46) [GET]
+Rendering uploads/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:57:46) [GET]
+Rendering uploads/new
+Completed in 57ms (View: 54, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 09:59:10) [GET]
+Rendering uploads/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 10:00:58) [GET]
+Rendering uploads/new
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:56:43) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:56:44) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 12:58:22) [GET]
+Rendering uploads/new
+Completed in 145ms (View: 143, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:01:48) [GET]
+Rendering uploads/new
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:02:45) [GET]
+Rendering uploads/new
+Completed in 54ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:14:13) [GET]
+Rendering uploads/new
+Completed in 56ms (View: 53, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2009-11-25 13:14:38) [GET]
+Rendering uploads/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-26 17:13:48) [GET]
+Rendering uploads/new
+Completed in 199ms (View: 197, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:37:03) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:37:29) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:37:58) [GET]
+Rendering uploads/new
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:38:16) [GET]
+Rendering uploads/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 08:38:20) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-83303-11ikc0j-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:40:16) [GET]
+Rendering uploads/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 08:40:20) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-83303-t8hk1i-0>}
+
+ActionController::UnknownAction (No action responded to index. Actions: authenticate):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:48:33) [GET]
+Rendering uploads/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 08:48:38) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-83303-dzrcrm-0>}
+
+ActionView::MissingTemplate (Missing template uploads/index.erb in view path app/views):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 08:49:00) [GET]
+Rendering uploads/new
+Completed in 74ms (View: 73, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 08:49:04) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-83303-6tpo9k-0>}
+Rendering uploads/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 09:24:49) [GET]
+Rendering uploads/new
+Completed in 163ms (View: 161, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 09:47:34) [GET]
+Rendering uploads/new
+Completed in 145ms (View: 143, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 09:47:49) [POST]
+  Parameters: {"Filename"=>"CommuterDirect_Order_Summary.pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1hg6wd6-0>}
+Rendering uploads/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 09:47:54) [GET]
+Rendering uploads/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 09:48:02) [POST]
+  Parameters: {"Filename"=>"Etrade_Trade_Conf_Request.docx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-udf0bg-0>}
+Rendering uploads/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 09:49:35) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 09:49:42) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1nlxag4-0>}
+Rendering uploads/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:14:46) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:14:54) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-yhy45k-0>}
+Rendering uploads/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:15:24) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:15:31) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-4gena3-0>}
+Rendering uploads/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:16:24) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:16:30) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-5hx22q-0>}
+in here!
+
+NoMethodError (undefined method `[]' for #<Tempfile:0x10440ef98>):
+  app/controllers/uploads_controller.rb:4:in `upload'
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (115.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:17:15) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:17:21) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-2ea6kz-0>}
+{"Filename"=>"SMT presenation - LS final.pptx", "action"=>"upload", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-2ea6kz-0>, "controller"=>"uploads"}
+
+NoMethodError (undefined method `[]' for #<Tempfile:0x10443f878>):
+  app/controllers/uploads_controller.rb:4:in `upload'
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:18:06) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:18:12) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1gjjrhz-0>}
+{"Filename"=>"SMT presenation - LS final.pptx", "action"=>"upload", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1gjjrhz-0>, "controller"=>"uploads"}
+
+ActionView::MissingTemplate (Missing template uploads/upload.erb in view path app/views):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:18:34) [GET]
+Rendering uploads/new
+Completed in 67ms (View: 65, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:18:40) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1ofm8uv-0>}
+{"Filename"=>"SMT presenation - LS final.pptx", "action"=>"upload", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1ofm8uv-0>, "controller"=>"uploads"}
+Rendering uploads/upload
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:22:59) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:23:06) [POST]
+  Parameters: {"Filename"=>"Etrade_Trade_Conf_Request.docx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-11s43lj-0>}
+{"Filename"=>"Etrade_Trade_Conf_Request.docx", "action"=>"upload", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-11s43lj-0>, "controller"=>"uploads"}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:29:23) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-zgdg0y-0>}
+{"Filename"=>"GoogleChrome.dmg", "action"=>"upload", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-zgdg0y-0>, "controller"=>"uploads"}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:31:08) [GET]
+Rendering uploads/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:31:15) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-9obt50-0>}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:32:28) [GET]
+Rendering uploads/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:32:36) [GET]
+Rendering uploads/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:33:06) [GET]
+Rendering uploads/index
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::AUTH_TOKEN) on line #2 of app/views/uploads/index.html.erb:
+1: <h1>here</h1>
+2: <%= "#{AUTH_TOKEN}" %>
+
+    app/views/uploads/index.html.erb:2
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (58.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:34:04) [GET]
+Rendering uploads/index
+Completed in 213ms (View: 212, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:34:12) [GET]
+Rendering uploads/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#index (for 127.0.0.1 at 2010-04-27 10:35:31) [GET]
+Rendering uploads/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:35:33) [GET]
+Rendering uploads/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:35:40) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "authenticity_token"=>"p2ZY7coxD4KUKUyx0/n2CPWNdMeyv1+T+SDExGlA/8Q=", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1go1yp6-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (101.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:37:28) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:37:34) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "authenticity_token"=>"p2ZY7coxD4KUKUyx0%2Fn2CPWNdMeyv1%2BT%2BSDExGlA%2F8Q%3D", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-5jvcvc-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (54.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:37:55) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:38:00) [POST]
+  Parameters: {"Filename"=>"wye_oak.jpg", "authenticity_token"=>"p2ZY7coxD4KUKUyx0%2Fn2CPWNdMeyv1%2BT%2BSDExGlA%2F8Q%3D", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-z79e13-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (69.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:39:15) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:39:34) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "authenticity_token"=>"p2ZY7coxD4KUKUyx0/n2CPWNdMeyv1+T+SDExGlA/8Q=", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-14ljf6w-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:43:59) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:44:12) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "authenticity_token"=>"p2ZY7coxD4KUKUyx0%2Fn2CPWNdMeyv1%2BT%2BSDExGlA%2F8Q%3D", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1ipqy1u-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (92.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:49:30) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:49:47) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:49:55) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "authenticity_token"=>"p2ZY7coxD4KUKUyx0/n2CPWNdMeyv1+T+SDExGlA/8Q=", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-lgv3x6-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:55:35) [GET]
+Rendering uploads/new
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:55:38) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:55:46) [POST]
+  Parameters: {"Filename"=>"Penn_Apr2010.pdf", "authenticity_token"=>"p2ZY7coxD4KUKUyx0/n2CPWNdMeyv1+T+SDExGlA/8Q=", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-rfbmih-0>}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (125.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:57:09) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:57:14) [POST]
+  Parameters: {"Filename"=>"GoogleChrome.dmg", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-z77dh2-0>}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:57:43) [GET]
+Rendering uploads/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:57:49) [POST]
+  Parameters: {"Filename"=>"Danone 2010 Service Plan (2).pdf", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-a3sa6t-0>}
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:58:19) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:58:25) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-pudy7e-0>}
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-27 10:58:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/fancyupload/assets/error.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:58:51) [GET]
+Rendering uploads/new
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:58:57) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-mo00k0-0>}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]
+
+
+Processing UploadsController#new (for 127.0.0.1 at 2010-04-27 10:59:26) [GET]
+Rendering uploads/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UploadsController#upload (for 127.0.0.1 at 2010-04-27 10:59:33) [POST]
+  Parameters: {"Filename"=>"SMT presenation - LS final.pptx", "Upload"=>"Submit Query", "file"=>#<File:/var/folders/c6/c6W9fmo7HPC1n1cuhyzX+k+++TM/-Tmp-/RackMultipart20100427-84290-1bclac8-0>}
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/uploads/upload]

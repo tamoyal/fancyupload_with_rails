@@ -1,0 +1,17 @@
+*Blog Post:* "http://www.tonyamoyal.com":http://www.tonyamoyal.com
+
+p. *Steps to make the example work:*
+
+- Make sure you have the HAML gem installed
+
+- Make sure a public readable crossdomain.xml exists in your /public directory:
+
+bc. <?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM
+"http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+  <allow-access-from domain="*" secure="false" />
+</cross-domain-policy>
+
+- Also make sure a folder named 'data' exists in your Rails root.  Files are uploaded there by default but this can be changed.
+
