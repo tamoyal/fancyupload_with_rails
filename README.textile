@@ -1,4 +1,4 @@
-*Blog Post:* "http://www.tonyamoyal.com":http://www.tonyamoyal.com
+*Blog Post:* "http://www.tonyamoyal.com/2010/04/27/getting-fancyupload-to-work-with-rails/":http://www.tonyamoyal.com/2010/04/27/getting-fancyupload-to-work-with-rails/
 
 p. *Steps to make the example work:*
 
